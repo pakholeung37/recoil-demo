@@ -12,5 +12,4 @@ function createShape(shape: { type: keyof typeof shapes }) {
   const { type } = shape
   return shapes[type]
 }
-
 export { Rectangle, Ellipse, createShape }

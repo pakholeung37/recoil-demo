@@ -10,6 +10,7 @@ export type ElementProps = Partial<{
   onMouseDown: () => void
   onClick: () => void
   children: ReactNode
+  type: string
 }>
 
 const Element: React.FC<ElementProps> = ({
