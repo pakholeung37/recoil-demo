@@ -5,9 +5,9 @@ type ImageProps = ElementProps &
   Partial<{
     uri: string
   }>
-export default function Image({ width, height, uri }: ImageProps) {
+export default function Image({ uri, ...props }: ImageProps) {
   return (
-    <Element width={width} height={height}>
+    <Element {...props}>
       <img src={uri}></img>
     </Element>
   )

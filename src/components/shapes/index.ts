@@ -2,6 +2,7 @@ import Rectangle from "./Rectangle"
 import Ellipse from "./Ellipse"
 import Image from "./Image"
 
+export type ShapeType = keyof typeof shapes
 const shapes = {
   rect: Rectangle,
   ellipse: Ellipse,

@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react"
+import { ShapeType } from "."
 
 export type ElementProps = Partial<{
   x: number
@@ -10,8 +11,7 @@ export type ElementProps = Partial<{
   onMouseDown: () => void
   onClick: () => void
   children: ReactNode
-  type: string
-}>
+}> & { type: ShapeType }
 
 const Element: React.FC<ElementProps> = ({
   x,
